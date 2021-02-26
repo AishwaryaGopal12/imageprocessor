@@ -1,4 +1,4 @@
-- Mo Garoub 
-- Rui Wang
-- Aishwarya Gopal
-- Joshua Lim
+- Mo Garoub (mgaroub)
+- Rui Wang (wang-rui)
+- Aishwarya Gopal (AishwaryaGopal12)
+- Joshua Lim (jiajie0225)
