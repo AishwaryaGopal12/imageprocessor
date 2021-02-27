@@ -6,7 +6,9 @@ This cookiecutter creates a boilerplate for a Python project.
 
 ## Overview
 
-Images form a significant part of the data in todays world. However, at most times, these images cannot be used directly and need to be processed in order to extract some information from them. PyGram aims to make the image processing task easy and intuitive. With Pygram, users can rotate the images, convert it to greyscale, flip the image in either horizontal or vertical direction and add padding to the images.
+Images form a significant part of the data in todays world. Whether you want to enhance your poorly-lit profile picture or analyze sattliete images, filters are your best friends. In scientific image processing, at most times, the images cannot be used directly and need to be processed in order to extract information from them. PyGram aims to make the image processing task easy and intuitive. With Pygram, users can rotate the image, convert it to greyscale, flip it in either horizontal or vertical direction, and add padding to it (frame). 
+
+To fit the package in the Python ecosystem, we are enhancing an existing package called [InstaPy](https://github.com/UBC-MDS/InstaPy) by adding more features. Moreover, we're planning to add some of the image processing functions from [DSCI 511, lab3](https://github.ubc.ca/MDS-2020-21/DSCI_511_py-prog_students/blob/master/release/lab3/lab3_release.ipynb) and [DSCI 572](https://github.ubc.ca/MDS-2020-21/DSCI_572_sup-learn-2_students) into the package for use by MDS instructors in the future. 
 
 ## Functions
 
@@ -71,7 +73,7 @@ The official documentation is hosted on Read the Docs: https://pygram.readthedoc
 
 ## Contributors
 
-We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/UBC-MDS/PyGram/blob/main/CONTRIBUTORS.md).
+We welcome all contributions to this project! If you notice a bug, or have a feature request, please open up an issue here. If you'd like to contribute a feature or bug fix, you can fork our repo and submit a pull request. We will review pull requests within 7 days. All contributors must abide by our [code of conduct](https://github.com/UBC-MDS/PyGram/blob/main/CONDUCT.rst).
 
 ### Credits
 
