@@ -21,7 +21,7 @@ Images form a significant part of the data in todays world. However, at most tim
 ## Installation
 
 ```bash
-$ pip install -i https://test.pypi.org/simple/ imageprocessor
+$ pip install -i https://test.pypi.org/simple/ PyGram
 ```
 
 ## Features
@@ -30,7 +30,7 @@ $ pip install -i https://test.pypi.org/simple/ imageprocessor
 
 ## Dependencies
 
-- TODO
+- Numpy
 
 ## Usage
 
