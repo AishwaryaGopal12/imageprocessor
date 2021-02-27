@@ -24,10 +24,6 @@ Images form a significant part of the data in todays world. However, at most tim
 $ pip install -i https://test.pypi.org/simple/ PyGram
 ```
 
-## Features
-
-- TODO
-
 ## Dependencies
 
 - Numpy
@@ -71,11 +67,11 @@ Arguments:\
 
 ## Documentation
 
-The official documentation is hosted on Read the Docs: https://imageprocessor.readthedocs.io/en/latest/
+The official documentation is hosted on Read the Docs: https://pygram.readthedocs.io/en/latest/
 
 ## Contributors
 
-We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/wang-rui/imageprocessor/graphs/contributors).
+We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/UBC-MDS/PyGram/blob/main/CONTRIBUTORS.md).
 
 ### Credits
 
