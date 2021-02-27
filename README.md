@@ -4,17 +4,19 @@
 
 This cookiecutter creates a boilerplate for a Python project.
 
-## Package Overview
+## Overview
 
-Images form a significant part of the data in todays world. However, at most times, these images cannot be used directly and need to be processed in order to extract some information from them. PyGram aims to make the image processing task easy and intuitive. With Pygram, users can rotate the images, convert it to greyscale, flip the image in either horizontal or vertical direction and add padding to the images. The four functions contained in this package are :
+Images form a significant part of the data in todays world. However, at most times, these images cannot be used directly and need to be processed in order to extract some information from them. PyGram aims to make the image processing task easy and intuitive. With Pygram, users can rotate the images, convert it to greyscale, flip the image in either horizontal or vertical direction and add padding to the images.
 
-- `flipping`: This function can be used to flip the image either in the horizontal or vertical direction. The arguments to be passed to this function are the path of the input image, "h" or "v" indicating the direction of the flip and the path where the output image has to be saved.
+## Functions
 
-- `greyscale`: The greyscale function converts a color image into a greyscale image. This function takes the path of the input image and the path where the resultant image has to be stored as arguments. 
+- `flipping`: This function can be used to flip the image either in the horizontal or vertical direction.
 
-- `padding`: This function can be used to add padding to the the borders of an image. The path of the input image, the width of padding required and the path where the output image has to be saved are the required arguments for this function.
+- `greyscale`: The greyscale function converts a color image into a greyscale image.  
 
-- `rotate`: The rotate function rotates an image by the specified number of degrees. This function takes the path of the input image, degrees to rotate by and the path where the resultant image has to be stored as arguments.
+- `padding`: This function can be used to add padding to the the borders of an image. 
+
+- `rotate`: The rotate function rotates an image by the specified number of degrees. 
 
 ## Installation
 
@@ -32,7 +34,40 @@ $ pip install -i https://test.pypi.org/simple/ imageprocessor
 
 ## Usage
 
-- TODO
+`from pygram.flipping import flipping`
+
+`from pygram.greyscale import greyscale`
+
+`from pygram.padding import padding`
+
+`from pygram.rotate import rotate`
+
+1. `flipping(input_path, direction, output_path)`
+
+Arguments:
+    - `input_path`: path to input image
+    - `direction`: direction of flip ("h" for horizontal/ "v" for vertical)
+    - `output_path`: path to output image
+
+2. `greyscale(input_path, output_path)`
+
+Arguments:
+    - `input_path`: path to input image
+    - `output_path`: path to output image
+
+3. `padding(input_path, width, output_path)`
+
+Arguments:
+    - `input_path`: path to input image
+    - `width`: number of pixels of padding to be added
+    - `output_path`: path to output image
+
+4. `rotate(input_path, degrees, output_path)`
+
+Arguments:
+    - `input_path`: path to input image
+    - `degrees`: the degrees to rotate the image by
+    - `output_path`: path to output image
 
 ## Documentation
 
