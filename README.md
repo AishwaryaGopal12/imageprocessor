@@ -44,30 +44,30 @@ $ pip install -i https://test.pypi.org/simple/ PyGram
 
 1. `flipping(input_path, direction, output_path)`
 
-Arguments:
-    - `input_path`: path to input image
-    - `direction`: direction of flip ("h" for horizontal/ "v" for vertical)
+Arguments:\
+    - `input_path`: path to input image\
+    - `direction`: direction of flip ("h" for horizontal/ "v" for vertical)\
     - `output_path`: path to output image
 
 2. `greyscale(input_path, output_path)`
 
-Arguments:
-    - `input_path`: path to input image
+Arguments:\
+    - `input_path`: path to input image\
     - `output_path`: path to output image
 
 3. `padding(input_path, width, output_path)`
 
-Arguments:
-    - `input_path`: path to input image
-    - `width`: number of pixels of padding to be added
-    - `output_path`: path to output image
+Arguments:\
+    - `input_path`: path to input image\
+    - `width`: number of pixels of padding to be added\
+    - `output_path`: path to output image\
 
 4. `rotate(input_path, degrees, output_path)`
 
-Arguments:
-    - `input_path`: path to input image
-    - `degrees`: the degrees to rotate the image by
-    - `output_path`: path to output image
+Arguments:\
+    - `input_path`: path to input image\
+    - `degrees`: the degrees to rotate the image by\
+    - `output_path`: path to output image\
 
 ## Documentation
 
