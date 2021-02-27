@@ -1,4 +1,4 @@
-# This script is for function rotate
+# This script is for the rotate function
 
 def rotate(image, degree, output_path):
     '''
