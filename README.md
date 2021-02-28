@@ -58,14 +58,14 @@ Arguments:\
 Arguments:\
     - `input_path`: path to input image\
     - `width`: number of pixels of padding to be added\
-    - `output_path`: path to output image\
+    - `output_path`: path to output image
 
 4. `rotate(input_path, degrees, output_path)`
 
 Arguments:\
     - `input_path`: path to input image\
     - `degrees`: the degrees to rotate the image by\
-    - `output_path`: path to output image\
+    - `output_path`: path to output image
 
 ## Documentation
 
