@@ -1,11 +1,13 @@
+import os, sys
+import matplotlib.pyplot as plt
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
 from pygram import __version__
 from pygram import padding
-import matplotlib.pyplot as plt
-
 
 def test_version():
     assert __version__ == '0.1.0'
-
 
 def test_padding():
     padding("pygram/tests/images/samples.png", 20, "pygram/tests/images/samples_temp.png")
