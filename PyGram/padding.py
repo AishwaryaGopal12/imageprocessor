@@ -28,7 +28,7 @@ def padding(image='', width=1, output_path=''):
 
     extra_left, extra_right = 1, 1
     extra_top, extra_bottom = 1, 1
-    image_pad = np.pad(image_stack, ((extra_left, extra_right), (extra_top, extra_bottom), (0, 0)),
+    image_pad = np.pad(image, ((extra_left, extra_right), (extra_top, extra_bottom), (0, 0)),
        mode='constant', constant_values=0)
     # exception handling
     try:
