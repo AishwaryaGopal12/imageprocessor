@@ -1,7 +1,7 @@
 # This script is to add frame on the image
 import matplotlib.pyplot as plt
 import numpy as np 
-def padding(image, width=1, output_path):
+def padding(image='', width=1, output_path=''):
     '''
     Add a padding to the border of the image
     Arguments:
