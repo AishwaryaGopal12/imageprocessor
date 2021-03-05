@@ -1,8 +1,8 @@
 import os, sys
 import matplotlib.pyplot as plt
-currentdir = os.path.dirname(os.path.realpath(__file__))
-parentdir = os.path.dirname(currentdir)
-sys.path.append(parentdir)
+#currentdir = os.path.dirname(os.path.realpath(__file__))
+#parentdir = os.path.dirname(currentdir)
+#sys.path.append(parentdir)
 from pygram import __version__
 from pygram import padding
 
