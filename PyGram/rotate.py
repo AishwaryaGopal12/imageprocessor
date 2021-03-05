@@ -6,7 +6,10 @@ import cv2
 
 def rotate(image, degree, output_path):
     """
-    Rotate an image by a given degree
+    Rotates an OpenCV 2 / NumPy image about it's centre by the given degree
+    (in degrees). The returned image will be large enough to hold the entire
+    new image, with a black background
+
     Arguments:
     -----------------------------
         image: path of input file
