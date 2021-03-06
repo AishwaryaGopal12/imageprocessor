@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pygram"
+name = "mdspygram"
 version = "0.1.0"
 description = "Python packages that can provide some functionalities to modify an image"
 authors = ["Rui, Mo, Joshua, Aishwarya"]
