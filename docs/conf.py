@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = u'MDSPyGram'
+project = u'ImageProcessor'
 copyright = u"2021, Rui Wang"
 author = u"Rui Wang"
 
