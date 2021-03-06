@@ -10,7 +10,7 @@ Images form a significant part of the data in today's world. Whether you want to
 
 ## Python ecosystem
 
-To fit the package in the Python ecosystem, we are enhancing an existing package called [InstaPy](https://github.com/UBC-MDS/InstaPy) by adding more features. Moreover, we're planning to add some of the image processing functions from [DSCI 511, lab3](https://github.ubc.ca/MDS-2020-21/DSCI_511_py-prog_students/blob/master/release/lab3/lab3_release.ipynb) and [DSCI 572](https://github.ubc.ca/MDS-2020-21/DSCI_572_sup-learn-2_students) into the package for use by MDS instructors in the future. 
+To fit the package in the Python ecosystem, we are following the most  most comprehensive image processing library in Python called [scikit-image](https://scikit-image.org/) by adding more features. Moreover, we're planning to add some of the image processing functions from [DSCI 511, lab3](https://github.ubc.ca/MDS-2020-21/DSCI_511_py-prog_students/blob/master/release/lab3/lab3_release.ipynb) and [DSCI 572](https://github.ubc.ca/MDS-2020-21/DSCI_572_sup-learn-2_students) into the package for use by MDS instructors in the future. 
 
 ## Functions
 
