@@ -16,15 +16,15 @@ def greyscale(image, output_path):
     '''
     try:
         image = plt.imread(image)
-        print("Reading image")
-        print(image.shape)
-
     except FileNotFoundError:
         print("The input file/path does not exist, please double check it. ")
+        raise
     except OSError:
         print("The input file is not an image.")
+        raise
     except AttributeError:
         print("Please type in  a string as the path for the input image file.")
+        raise
     except Exception as e:
         print("Other exceptions, please check your input and output.")
         print(e)

@@ -1,7 +1,7 @@
 import os, sys
 import matplotlib.pyplot as plt
-from imageprocessor import greyscale
-
+from imageprocessor.greyscale import greyscale
+import pytest
 currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)

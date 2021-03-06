@@ -17,10 +17,13 @@ def padding(image='', width=1, output_path=''):
         image = plt.imread(image)
     except FileNotFoundError:
         print("The input file/path does not exist, please double check it. ")
+        raise
     except OSError:
         print("The input file is not an image.")
+        raise
     except AttributeError:
         print("Please type in  a string as the path for the input image file.")
+        raise
     except Exception as e:
         print("Other exceptions, please check your input and output.")
         print(e)
@@ -28,8 +31,11 @@ def padding(image='', width=1, output_path=''):
 
     extra_left, extra_right = 1, 1
     extra_top, extra_bottom = 1, 1
-    image_pad = np.pad(image, ((extra_left, extra_right), (extra_top, extra_bottom), (0, 0)),
-       mode='constant', constant_values=0)
+    try:
+        image_pad = np.pad(image, ((extra_left, extra_right), (extra_top, extra_bottom), (0, 0)),
+            mode='constant', constant_values=0)
+    except ValueError:
+        print("The shape is not correct")
     # exception handling
     try:
         
