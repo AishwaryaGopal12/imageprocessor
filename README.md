@@ -25,7 +25,7 @@ To fit the package in the Python ecosystem, we are enhancing an existing package
 ## Installation
 
 ```bash
-$ pip install -i https://test.pypi.org/simple/ PyGram
+$ pip install -i https://test.pypi.org/simple/imageprocessor
 ```
 
 ## Dependencies
