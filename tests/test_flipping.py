@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import skimage.io
 import pytest
 import numpy as np
-from imageprocessor import flipping
+import pytest
+from imageprocessor.flipping import flipping
 
 currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)

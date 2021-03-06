@@ -1,8 +1,8 @@
 import os, sys
 import matplotlib.pyplot as plt
 from imageprocessor import __version__
-from imageprocessor import padding
-
+from imageprocessor.padding import padding
+import pytest
 currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
