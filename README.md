@@ -6,7 +6,7 @@ This cookiecutter creates a boilerplate for a Python project.
 
 ## Overview
 
-Images form a significant part of the data in today's world. Whether you want to enhance your poorly-lit profile picture or analyze satellite images, filters are your best friends. In scientific image processing, at most times, the images cannot be used directly and need to be processed to extract information from them. PyGram aims to make the image processing task easy and intuitive. With PyGram, users can rotate the image, convert it to greyscale, flip it in either a horizontal or vertical direction, and add padding to it (frame). 
+Images form a significant part of the data in today's world. Whether you want to enhance your poorly-lit profile picture or analyze satellite images, filters are your best friends. In scientific image processing, at most times, the images cannot be used directly and need to be processed to extract information from them. ImageProcessor aims to make the image processing task easy and intuitive. With ImageProcessor, users can rotate the image, convert it to greyscale, flip it in either a horizontal or vertical direction, and add padding to it (frame). 
 
 ## Python ecosystem
 
