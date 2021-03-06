@@ -5,6 +5,9 @@ import pytest
 import numpy as np
 from imageprocessor import flipping
 
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
 
 def test_flippingH():
     '''
@@ -59,3 +62,4 @@ def test_nonexistent_output_path():
     '''
     with pytest.raises(FileNotFoundError):
         flipping("imageprocessor/tests/images/samples.png", "h", "./555/456.jpg")
+
