@@ -30,7 +30,7 @@ $ pip install -i https://test.pypi.org/simple/imageprocessor
 
 ## Dependencies
 
-- Numpy
+- Numpy, matplotlib, skimage
 
 ## Usage
 
