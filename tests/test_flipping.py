@@ -63,4 +63,3 @@ def test_nonexistent_output_path():
     with pytest.raises(FileNotFoundError):
         flipping("imageprocessor/tests/images/samples.png", "h", "./555/456.jpg")
 
-test_flippingH()
