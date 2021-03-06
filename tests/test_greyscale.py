@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 #currentdir = os.path.dirname(os.path.realpath(__file__))
 #parentdir = os.path.dirname(currentdir)
 #sys.path.append(parentdir)
-from pygram import greyscale
+from imageprocessor import greyscale
 
 def test_greyscale():
     '''

@@ -34,13 +34,13 @@ $ pip install -i https://test.pypi.org/simple/ PyGram
 
 ## Usage
 
-`from mdspygram.flipping import flipping`
+`from imageprocessor.flipping import flipping`
 
-`from mdspygram.greyscale import greyscale`
+`from imageprocessor.greyscale import greyscale`
 
-`from mdspygram.padding import padding`
+`from imageprocessor.padding import padding`
 
-`from mdspygram.rotate import rotate`
+`from imageprocessor.rotate import rotate`
 
 1. `flipping(input_path, direction, output_path)`
 
@@ -71,7 +71,7 @@ Arguments:\
 
 ## Documentation
 
-The official documentation is hosted on Read the Docs: https://mdspygram.readthedocs.io/en/latest/
+The official documentation is hosted on Read the Docs: https://imageprocessor.readthedocs.io/en/latest/
 
 ## Contributors
 
