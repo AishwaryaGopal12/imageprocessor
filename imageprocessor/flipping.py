@@ -57,7 +57,7 @@ def flipping(image, direction, output_path):
     # exception handling
     try:
 
-        plt.imshow(input_image)
+        plt.imshow(output_matrix)
         plt.savefig(output_path)
     except FileNotFoundError:
         print("The output path does not exist.")
