@@ -24,10 +24,13 @@ def flipping(image, direction, output_path):
         print("Success")
     except FileNotFoundError:
         print("The input file/path does not exist")
+        raise
     except OSError:
         print("The input file is not an image.")
+        raise
     except AttributeError:
         print("Please type in  a string as the path for the input image file.")
+        raise
     except Exception as e:
         print("Other Errors")
         print(e)
