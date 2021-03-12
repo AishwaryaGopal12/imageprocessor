@@ -29,7 +29,7 @@ sys.path.append(parentdir)
 #     assert np.array_equal(output, test_output), "The flipping function does not work properly"
 
 
-Exception Handling
+#Exception Handling
 
 def test_non_string_input():
     '''
