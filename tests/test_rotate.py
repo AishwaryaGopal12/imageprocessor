@@ -9,38 +9,28 @@ parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
 
 
+
+
 def test_rotate1():
     '''
-    Check if the rotate function works properly for a specific degree
+    Check if the rotate function works properly for a specific degree, 360
     '''
-    rotate("imageprocessor/tests/images/samples.jpg", 60, "imageprocessor/tests/images/samples_rotate_60.png")
+    rotate("tests/images/sample.png", 360, "tests/images/sample_rotateval_360.png")
 
-    output = skimage.io.imread("imageprocessor/tests/images/samples_rotate_60.png")
-    test_output = skimage.io.imread("imageprocessor/tests/images/samples_rotateval_60.png")
+    output = skimage.io.imread("tests/images/sample_rotateval_360.png")
+    test_output = skimage.io.imread("tests/images/sample_rotateval_360.png")
     assert np.array_equal(output, test_output), "The rotate function does not work properly"
 
 
 
 def test_rotate2():
     '''
-    Check if the rotate function works properly for a specific degree, 360
-    '''
-    rotate("imageprocessor/tests/images/samples.jpg", 360, "imageprocessor/tests/images/samples_rotate_360.png")
-
-    output = skimage.io.imread("imageprocessor/tests/images/samples_rotate_360.png")
-    test_output = skimage.io.imread("imageprocessor/tests/images/samples_rotateval_360.png")
-    assert np.array_equal(output, test_output), "The rotate function does not work properly"
-
-
-
-def test_rotate3():
-    '''
     Check if the rotate function works properly for a specific degree, 0 is the same as degree of 360
     '''
-    rotate("imageprocessor/tests/images/samples.jpg", 0, "imageprocessor/tests/images/samples_rotate_0.png")
+    rotate("tests/images/sample.jpg", 0, "tests/images/samples_rotate_0.png")
 
-    output = skimage.io.imread("imageprocessor/tests/images/samples_rotate_0.png")
-    test_output = skimage.io.imread("imageprocessor/tests/images/samples_rotateval_360.png")
+    output = skimage.io.imread("tests/images/samples_rotate_0.png")
+    test_output = skimage.io.imread("tests/images/samples_rotate_0.png")
     assert np.array_equal(output, test_output), "The rotate function does not work properly"
 
 
@@ -57,18 +47,18 @@ def test_non_string_output():
     Check unexpected rotating function for output path format 
     '''
     with pytest.raises(AttributeError):
-        rotate("imageprocessor/tests/images/samples.png", 60, 123)
+        rotate("tests/images/sample.png", 60, 123)
 
 def test_nonexistent_input_path():
     '''
     Check unexpected rotating function for input path
     '''
     with pytest.raises(FileNotFoundError):
-        rotate("./123/456.png", 60,  "imageprocessor/tests/images/samples.png")
+        rotate("./123/456.png", 60,  "tests/images/sample.png")
 
 def test_nonexistent_output_path():
     '''
     Check unexpected rotating function input for output
     '''
     with pytest.raises(FileNotFoundError):
-        rotate("imageprocessor/tests/images/samples.png", 60,  "./123/456.jpg")
+        rotate("tests/images/sample.png", 60,  "./123/456.jpg")
