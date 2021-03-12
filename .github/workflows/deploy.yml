@@ -1,7 +1,7 @@
 name: Deploy
 
 on:
-  # Trigger the workflow on push or pull request to main
+  # Trigger the workflow on push or pull request to master
   push:
     branches:
       - main
@@ -68,4 +68,5 @@ jobs:
       run: |
         poetry config repositories.test-pypi https://test.pypi.org/legacy/
         poetry build
+
         poetry publish -r test-pypi -u $TEST_PYPI_USERNAME -p $TEST_PYPI_PASSWORD
