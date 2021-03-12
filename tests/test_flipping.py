@@ -36,25 +36,25 @@ def test_non_string_input():
     Check unexpected greyscale function input
     '''
     with pytest.raises(AttributeError):
-        greyscale(555, 0)
+        flipping(555,"h", 0)
 
 def test_non_string_output():
     '''
     Check unexpected rotating function for output path format 
     '''
     with pytest.raises(AttributeError):
-        greyscale(0, 555)
+        flipping(0, "h",555)
 
 def test_nonexistent_input_path():
     '''
     Check unexpected greyscale function for input path
     '''
     with pytest.raises(FileNotFoundError):
-        greyscale("./123/456.png", "tests/images/sample.png")
+        flipping("./123/456.png", "h", "tests/images/sample.png")
 
 def test_nonexistent_output_path():
     '''
     Check unexpected greyscale function input for output
     '''
     with pytest.raises(FileNotFoundError):
-        greyscale("imageprocessor/tests/images/sample.png", "./123/456.png")
+        flipping("imageprocessor/tests/images/sample.png", "h", "./123/456.png")
