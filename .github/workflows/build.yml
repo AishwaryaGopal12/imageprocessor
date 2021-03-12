@@ -27,10 +27,7 @@ jobs:
         pip install poetry
         poetry install
     - name: Check style
-      uses: py-actions/flake8@v1
-      with:
-        max-line-length: "100"
-        exclude: "docs/conf.py"
+      run: poetry run flake8 --exclude=docs*
     - name: Test with pytest
       run: poetry run pytest --cov=./ --cov-report=xml
     - name: Upload coverage to Codecov  
