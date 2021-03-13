@@ -16,11 +16,11 @@ def test_rotate1():
     '''
     input1 = "tests/images/sample.png"
     output2 = "tests/images/sample_rotateval_360.png"
-    rotate(input, 360, output)
+    rotate(input1, 360, output2)
 
-    output = skimage.io.imread(output)
-    test_output = skimage.io.imread(output)
-    assert np.array_equal(output, test_output), \
+    output = skimage.io.imread(output2)
+    test_output = skimage.io.imread(output2)
+    assert np.array_equal(output2, test_output), \
         "The rotate function does not work properly"
 
 
@@ -49,7 +49,7 @@ def test_non_string_input():
 
 def test_non_string_output():
     '''
-    Check unexpected rotating function for output path format 
+    Check unexpected rotating function for output path format
     '''
     with pytest.raises(AttributeError):
         rotate("tests/images/sample.png", 60, 123)
