@@ -52,8 +52,7 @@ def flipping(image, direction, output_path):
         output_matrix = input_image.copy()
         output_matrix[original] = input_image[flipped]
 
-
-    # Data.type
+# Data.type
     output_matrix = np.array(output_matrix, dtype=np.uint8)
 
     # exception handling

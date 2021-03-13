@@ -1,14 +1,17 @@
 # This script is to add frame on the image
 import matplotlib.pyplot as plt
-import numpy as np 
+import numpy as np
+
+
 def padding(image='', width=1, output_path=''):
     '''
     Add a padding to the border of the image
     Arguments:
     -----------------------------
         image: path of input file
-        width: the pixels of the padding, the padding width for left, right, top, bottom are the same
-    Output: 
+        width: the pixels of the padding, \ 
+        the padding width for left, right, top, bottom are the same
+    Output:
     -----------------------------
         an image file in .png format
     '''
@@ -32,13 +35,14 @@ def padding(image='', width=1, output_path=''):
     extra_left, extra_right = 1, 1
     extra_top, extra_bottom = 1, 1
     try:
-        image_pad = np.pad(image, ((extra_left, extra_right), (extra_top, extra_bottom), (0, 0)),
-            mode='constant', constant_values=0)
+        image_pad = np.pad\
+            (image, ((extra_left, extra_right), (extra_top, extra_bottom), (0, 0)), 
+                mode='constant', constant_values=0)
     except ValueError:
         print("The shape is not correct")
     # exception handling
     try:
-        
+
         plt.imshow(image_pad)
         plt.savefig(output_path)
     except FileNotFoundError:

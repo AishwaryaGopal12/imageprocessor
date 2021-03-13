@@ -18,7 +18,7 @@ def test_greyscale():
     output = skimage.io.imread("tests/images/sample.png")
     test_output = skimage.io.imread("tests/images/sample.png")
     assert np.array_equal(output, test_output), \
-    "The greyscale function does not work properly"
+        "The greyscale function does not work properly"
 
 
 # Exception Handling

@@ -2,15 +2,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 
+
 def greyscale(image, output_path):
     '''
-    Converting a color image into a greyscale image.
-    Input: 
+    Converting a color image into a greyscale image
+    Input:
     -----------------------------
         image: string, path for the input image file
         output_path: string, path for the output image file
-           
-    Output: 
+   
+    Output:
     -----------------------------
         an image file at the specified output path
     '''
@@ -31,8 +32,7 @@ def greyscale(image, output_path):
         raise
     if len(image.shape) > 2 and image.shape[2] == 4:
         image = cv2.cvtColor(image, cv2.COLOR_BGRA2BGR)
-    gray_image = np.dot(image[...,:3], [0.2989, 0.5870, 0.1140])
-    
+    gray_image = np.dot(image[..., :3], [0.2989, 0.5870, 0.1140])
 
     try:
         plt.imshow(gray_image, cmap=plt.get_cmap('gray'), vmin=0, vmax=1)
@@ -45,4 +45,3 @@ def greyscale(image, output_path):
         print("Other exceptions, please check your input and output. ")
         print(e)
         raise
-
