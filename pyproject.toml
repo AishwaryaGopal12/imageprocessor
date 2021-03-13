@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "imageprocessor"
-version = "0.2.0"
+version = "0.2.1"
 description = "Python packages that can provide some functionalities to modify an image"
 authors = ["Rui, Mo, Joshua, Aishwarya"]
 
