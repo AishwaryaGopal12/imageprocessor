@@ -1,43 +1,44 @@
-import os 
+import os
 import sys
 import numpy as np
-#import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import skimage.io
 from imageprocessor.rotate import rotate
 import pytest
 currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
-input = 
+
 
 def test_rotate1():
     '''
-    Check if the rotate function works properly for a specific degree, 360
+    Check if the rotate function works properly for a specific 360 degree
     '''
-    input = "tests/images/sample.png"
-    output = "tests/images/sample_rotateval_360.png"
+    input1 = "tests/images/sample.png"
+    output2 = "tests/images/sample_rotateval_360.png"
     rotate(input, 360, output)
 
     output = skimage.io.imread(output)
     test_output = skimage.io.imread(output)
-    assert np.array_equal(output, test_output), "The rotate function does not work properly"
-
+    assert np.array_equal(output, test_output), \
+        "The rotate function does not work properly"
 
 
 def test_rotate2():
     '''
-    Check if the rotate function works properly for a specific degree, 0 is the same as degree of 360
+    Check if the rotate function works properly for a specific 0 degree
     '''
-    rotate("tests/images/sample.jpg", 0, \
-    "tests/images/samples_rotate_0.png")
+    input1 = "tests/images/sample.png"
+    output2 = "tests/images/sample_rotateval_0.png"
+    rotate(input1, 0, output2)
 
-    output = skimage.io.imread("tests/images/samples_rotate_0.png")
-    test_output = skimage.io.imread("tests/images/samples_rotate_0.png")
+    output = skimage.io.imread(output2)
+    test_output = skimage.io.imread(output2)
     assert np.array_equal(output, test_output), \
-    "The rotate function does not work properly"
+        "The rotate function does not work properly"
 
 
-#Exception Handling
+# Exception Handling
 def test_non_string_input():
     '''
     Check unexpected rotating function input
