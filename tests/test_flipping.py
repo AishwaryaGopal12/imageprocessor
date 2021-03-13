@@ -1,9 +1,9 @@
 import os 
 import sys
-#import matplotlib.pyplot as plt
-#import skimage.io
+# import matplotlib.pyplot as plt
+# import skimage.io
 import pytest
-#import numpy as np
+# import numpy as np
 from imageprocessor.flipping import flipping
 
 currentdir = os.path.dirname(os.path.realpath(__file__))
@@ -14,19 +14,23 @@ sys.path.append(parentdir)
 #     '''
 #     Testing the horizontal flipping function 
 #     '''
-#     flipping("tests/images/sample.png", "h", "tests/images/sample_flipping_h.png")
+#     flipping("tests/images/sample.png", "h", \
+#      "tests/images/sample_flipping_h.png")
 #     output = skimage.io.imread("tests/images/sample_flipping_h.png")
 #     test_output = skimage.io.imread("tests/images/sample_flipping_h.png")
-#     assert np.array_equal(output, test_output), "The flipping function does not work properly"   
+#     assert np.array_equal(output, test_output), \
+#       "The flipping function does not work properly"   
 
 # def test_flippingV():
 #     '''
 #     Testing the the vertical flipping function
 #     '''
-#     flipping("tests/images/sample.png", "v", "tests/images/sample_flipping_v.png")
+#     flipping("tests/images/sample.png", "v", \
+#       "tests/images/sample_flipping_v.png")
 #     output = skimage.io.imread("tests/images/sample_flipping_v.png")
 #     test_output = skimage.io.imread("tests/images/sample_flipping_v.png")
-#     assert np.array_equal(output, test_output), "The flipping function does not work properly"
+#     assert np.array_equal(output, test_output), \
+#      "The flipping function does not work properly"
 
 
 #Exception Handling
