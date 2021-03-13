@@ -44,8 +44,8 @@ def rotate(image, degree, output_path):
     image_center = tuple(np.array(image_size) / 2)
 
     # Convert the OpenCV 3x2 rotation matrix to 3x3
-    rot_mat = np.vstack\
-        ([cv2.getRotationMatrix2D(image_center, degree, 1.0), [0, 0, 1]])
+    rot_mat = np.vstack \
+    ([cv2.getRotationMatrix2D(image_center, degree, 1.0), [0, 0, 1]])
 
     rot_mat_notranslate = np.matrix(rot_mat[0:2, 0:2])
 
