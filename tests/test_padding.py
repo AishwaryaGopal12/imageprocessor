@@ -24,8 +24,7 @@ def test_padding():
     padding("tests/images/sample.png", 20, "tests/images/samples_padding.jpg")
     output = skimage.io.imread("tests/images/samples_padding.jpg")
     test_output = skimage.io.imread("tests/images/samples_padding.jpg")
-    assert np.array_equal(output, test_output), \
-        "The padding function does not work properly"
+    assert np.array_equal(output, test_output), "The padding function does not work properly"
 
 
 # Exception Handling
