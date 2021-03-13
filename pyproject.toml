@@ -4,6 +4,7 @@ version = "0.1.2"
 description = "Python packages that can provide some functionalities to modify an image"
 authors = ["Rui, Mo, Joshua, Aishwarya"]
 
+# README and important links to show-up on the test PyPI page
 readme = "README.md"
 homepage = "https://github.com/<github_username>/<github_repo>"
 repository = "https://github.com/<github_username>/<github_repo>"
