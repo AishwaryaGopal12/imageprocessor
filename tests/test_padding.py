@@ -39,7 +39,7 @@ def test_non_string_input():
 
 def test_non_string_output():
     '''
-    Check unexpected padding function for output path format 
+    Check unexpected padding function for output path format
     '''
     with pytest.raises(AttributeError):
         padding(325, 123)
@@ -59,6 +59,6 @@ def test_nonexistent_output_path():
     '''
     with pytest.raises(FileNotFoundError):
         padding(
-            "imageprocessor/tests/images/sample.png", 
+            "imageprocessor/tests/images/sample.png",
             "tests/123/s456.jpg"
         )

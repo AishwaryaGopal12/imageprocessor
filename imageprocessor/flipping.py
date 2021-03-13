@@ -1,12 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import skimage.io
+# import skimage.io
 
 
 def flipping(image, direction, output_path):
     '''
     Flipping an image in either horizontal or vertical direction
-    
+
     Arguments:
     -----------------------------
         image: path of the input file
@@ -15,8 +15,8 @@ def flipping(image, direction, output_path):
     -----------------------------
         an image file in .png format
     '''
-    
-    assert direction in ["h","v"], "Invalid flipping direction"
+
+    assert direction in ["h", "v"], "Invalid flipping direction"
 # exception handling
 
     try:
@@ -36,26 +36,25 @@ def flipping(image, direction, output_path):
         print(e)
         raise
 
-    
-#Horizontal Flipping
-    if direction == "h":
-        original=range(0, input_image.shape[1])
-        flipped=list(reversed(original))
-        output_matrix = input_image.copy()
-        output_matrix[:,original] = input_image[:,flipped]
 
-#Vertical Flipping
+# Horizontal Flipping
+    if direction == "h":
+        original = range(0, input_image.shape[1])
+        flipped = list(reversed(original))
+        output_matrix = input_image.copy()
+        output_matrix[:, original] = input_image[:, flipped]
+
+# Vertical Flipping
 
     elif direction == "v":
-        original=range(0, input_image.shape[0])
-        flipped=list(reversed(original))
+        original = range(0, input_image.shape[0])
+        flipped = list(reversed(original))
         output_matrix = input_image.copy()
         output_matrix[original] = input_image[flipped]
 
 
-    #Data.type
-    output_matrix=np.array(output_matrix, dtype=np.uint8)
-
+    # Data.type
+    output_matrix = np.array(output_matrix, dtype=np.uint8)
 
     # exception handling
     try:

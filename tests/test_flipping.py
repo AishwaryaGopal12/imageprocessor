@@ -65,4 +65,4 @@ def test_nonexistent_output_path():
     '''
     with pytest.raises(FileNotFoundError):
         flipping\
-            ("imageprocessor/tests/images/sample.png", "h", "./123/456.png")
+        ("imageprocessor/tests/images/sample.png", "h", "./123/456.png")

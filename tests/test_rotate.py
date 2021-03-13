@@ -20,7 +20,7 @@ def test_rotate1():
 
     output = skimage.io.imread(output2)
     test_output = skimage.io.imread(output2)
-    assert np.array_equal(output2, test_output), \
+    assert np.array_equal(output, test_output), \
         "The rotate function does not work properly"
 
 
