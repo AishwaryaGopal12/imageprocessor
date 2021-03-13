@@ -44,8 +44,7 @@ def rotate(image, degree, output_path):
     image_center = tuple(np.array(image_size) / 2)
 
     # Convert the OpenCV 3x2 rotation matrix to 3x3
-    rot_mat = np.vstack \
-    ([cv2.getRotationMatrix2D(image_center, degree, 1.0), [0, 0, 1]])
+    rot_mat = np.vstack([cv2.getRotationMatrix2D(image_center, degree, 1.0), [0, 0, 1]])
 
     rot_mat_notranslate = np.matrix(rot_mat[0:2, 0:2])
 
@@ -91,8 +90,7 @@ def rotate(image, degree, output_path):
     affine_mat = (np.matrix(trans_mat) * np.matrix(rot_mat))[0:2, :]
 
     # Apply the transform
-    result = cv2.warpAffine \
-    (image, affine_mat, (new_w, new_h), flags=cv2.INTER_LINEAR)
+    result = cv2.warpAffine(image, affine_mat, (new_w, new_h), flags=cv2.INTER_LINEAR)
 
     # exception handling
     try:
