@@ -1,6 +1,5 @@
 import os
 import sys
-from imageprocessor import __version__
 import skimage.io
 import numpy as np
 from imageprocessor.padding import padding
@@ -8,14 +7,6 @@ import pytest
 currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
-
-
-def test_version():
-    '''
-    Test Version of module
-    '''
-    assert __version__ == '0.1.0'
-
 
 def test_padding():
     '''
