@@ -10,6 +10,7 @@ numpy = "^1.20.1"
 matplotlib = "^3.3.4"
 opencv-python = "^4.5.1"
 scikit-image = "^0.18.1"
+python-semantic-release = "^7.15.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.2"
@@ -23,3 +24,9 @@ sphinxcontrib-napoleon = "^0.7"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = "<imageprocessor>/__init__.py:__version__"
+version_source = "commit"
+upload_to_pypi = "false"
+patch_without_tag = "true"
