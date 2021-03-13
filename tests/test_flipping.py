@@ -1,9 +1,9 @@
-import os, sys
-import matplotlib.pyplot as plt
-import skimage.io
+import os 
+import sys
+#import matplotlib.pyplot as plt
+#import skimage.io
 import pytest
-import numpy as np
-import pytest
+#import numpy as np
 from imageprocessor.flipping import flipping
 
 currentdir = os.path.dirname(os.path.realpath(__file__))
@@ -12,7 +12,7 @@ sys.path.append(parentdir)
 
 # def test_flippingH():
 #     '''
-#     Check if the horizontal flipping function 
+#     Testing the horizontal flipping function 
 #     '''
 #     flipping("tests/images/sample.png", "h", "tests/images/sample_flipping_h.png")
 #     output = skimage.io.imread("tests/images/sample_flipping_h.png")
@@ -33,28 +33,31 @@ sys.path.append(parentdir)
 
 def test_non_string_input():
     '''
-    Check unexpected greyscale function input
+    testing input format
     '''
     with pytest.raises(AttributeError):
-        flipping(555,"h", 0)
+        flipping(555, "h", 0)
+
 
 def test_non_string_output():
     '''
-    Check unexpected rotating function for output path format 
+    Testing output format 
     '''
     with pytest.raises(AttributeError):
         flipping(0, "h",555)
 
+
 def test_nonexistent_input_path():
     '''
-    Check unexpected greyscale function for input path
+    Testing input path
     '''
     with pytest.raises(FileNotFoundError):
         flipping("./123/456.png", "h", "tests/images/sample.png")
 
+
 def test_nonexistent_output_path():
     '''
-    Check unexpected greyscale function input for output
+    Testing output path 
     '''
     with pytest.raises(FileNotFoundError):
         flipping("imageprocessor/tests/images/sample.png", "h", "./123/456.png")
