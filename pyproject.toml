@@ -4,6 +4,11 @@ version = "0.1.1"
 description = "Python packages that can provide some functionalities to modify an image"
 authors = ["Rui, Mo, Joshua, Aishwarya"]
 
+readme = "README.md"
+homepage = "https://github.com/<github_username>/<github_repo>"
+repository = "https://github.com/<github_username>/<github_repo>"
+documentation = 'https://<package_name>.readthedocs.io'
+
 [tool.poetry.dependencies]
 python = "^3.8"
 numpy = "^1.20.1"
