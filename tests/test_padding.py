@@ -8,6 +8,7 @@ currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
 
+
 def test_padding():
     '''
     Check if the padding function could get the expected image
