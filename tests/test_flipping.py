@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 # import skimage.io
 import pytest
 import numpy as np
+from imageprocessor.flipping import flipping
 
 currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
-from imageprocessor.flipping import flipping
 
 
 def test_flipping():
