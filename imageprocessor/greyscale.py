@@ -36,7 +36,7 @@ def greyscale(image, output_path):
 
     try:
         plt.imshow(gray_image, cmap=plt.get_cmap('gray'), vmin=0, vmax=1)
-        plt.savefig(output_path)
+        plt.imsave(output_path, gray_image, cmap=plt.get_cmap("gray"))
     except FileNotFoundError:
         print("The output path does not exist.")
     except AttributeError:
