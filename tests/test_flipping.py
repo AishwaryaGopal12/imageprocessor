@@ -1,9 +1,9 @@
 import os
 import sys
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 # import skimage.io
 import pytest
-import numpy as np
+# import numpy as np
 from imageprocessor.flipping import flipping
 
 currentdir = os.path.dirname(os.path.realpath(__file__))
