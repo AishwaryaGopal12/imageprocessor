@@ -6,7 +6,7 @@ This cookiecutter creates a boilerplate for a Python project.
 
 ## Overview
 
-Images form a significant part of the data in today's world. Whether you want to enhance your poorly-lit profile picture or analyze satellite images, filters are your best friends. In scientific image processing, at most times, the images cannot be used directly and need to be processed to extract information from them. ImageProcessor aims to make the image processing task easy and intuitive. With ImageProcessor, users can rotate the image, convert it to greyscale, flip it in either a horizontal or vertical direction, and add padding to it (frame). 
+Images form a significant part of the data in today's world. Whether you want to enhance your poorly-lit profile picture or analyze satellite images, filters are your best friends. In scientific image processing, at most times, the images cannot be used directly and need to be processed to extract information from them. ImageProcessor aims to make the image processing task easy and intuitive. With ImageProcessor, users can rotate the image, convert it to greyscale, flip it horizontally in black and white, and add padding to it (frame). 
 
 ## Python ecosystem
 
@@ -14,7 +14,7 @@ Our package fits in the Python ecosystem. There are plenty of packages with imag
 
 ## Functions
 
-- `flipping`: This function can be used to flip the image either in the horizontal or vertical direction.
+- `flipping`: This function can be used to flip the image horizontally in black and white
 
 - `greyscale`: The greyscale function converts a color image into a greyscale image.  
 
@@ -42,11 +42,10 @@ $ pip install -i https://test.pypi.org/simple/imageprocessor
 
 `from imageprocessor.rotate import rotate`
 
-1. `flipping(input_path, direction, output_path)`
+1. `flipping(input_path, output_path)`
 
 Arguments:\
     - `input_path`: path to input image\
-    - `direction`: direction of flip ("h" for horizontal/ "v" for vertical)\
     - `output_path`: path to output image
 
 2. `greyscale(input_path, output_path)`
