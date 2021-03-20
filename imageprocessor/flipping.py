@@ -1,26 +1,25 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import cv2
 # import skimage.io
 
 
-def flipping(image, direction, output_path):
+def flipping(input_path, output_path):
     '''
     Flipping an image in either horizontal or vertical direction
 
     Arguments:
     -----------------------------
-        image: path of the input file
-        direction: direction of flip, horizontal="h", vertical = "v"
+        input_path: path of the input file
     Output:
     -----------------------------
         an image file in .png format
     '''
 
-    assert direction in ["h", "v"], "Invalid flipping direction"
 # exception handling
 
     try:
-        input_image = plt.imread(image)
+        input_image = plt.imread(input_path)
         print("Success")
     except FileNotFoundError:
         print("The input file/path does not exist")
@@ -36,30 +35,24 @@ def flipping(image, direction, output_path):
         print(e)
         raise
 
+   
+    input_image = np.dot(input_image[..., :3], [0.2989, 0.5870, 0.1140])
 
 # Horizontal Flipping
-    if direction == "h":
-        original = range(0, input_image.shape[1])
-        flipped = list(reversed(original))
-        output_matrix = input_image.copy()
-        output_matrix[:, original] = input_image[:, flipped]
+    original = range(0, input_image.shape[1])
+    flipped = list(reversed(original))
+    output_matrix = input_image.copy()
+    output_matrix[:, original] = input_image[:, flipped]
 
-# Vertical Flipping
-
-    elif direction == "v":
-        original = range(0, input_image.shape[0])
-        flipped = list(reversed(original))
-        output_matrix = input_image.copy()
-        output_matrix[original] = input_image[flipped]
+    
 
 # Data.type
     output_matrix = np.array(output_matrix, dtype=np.uint8)
 
     # exception handling
     try:
-
         plt.imshow(output_matrix)
-        plt.savefig(output_path)
+        plt.imsave(output_path, output_matrix, cmap=plt.get_cmap("gray"))
     except FileNotFoundError:
         print("The output path does not exist.")
     except AttributeError:
