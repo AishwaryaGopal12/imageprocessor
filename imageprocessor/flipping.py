@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import cv2
+# import cv2
 # import skimage.io
 
 
@@ -35,7 +35,6 @@ def flipping(input_path, output_path):
         print(e)
         raise
 
-   
     input_image = np.dot(input_image[..., :3], [0.2989, 0.5870, 0.1140])
 
 # Horizontal Flipping
@@ -43,8 +42,6 @@ def flipping(input_path, output_path):
     flipped = list(reversed(original))
     output_matrix = input_image.copy()
     output_matrix[:, original] = input_image[:, flipped]
-
-    
 
 # Data.type
     output_matrix = np.array(output_matrix, dtype=np.uint8)
