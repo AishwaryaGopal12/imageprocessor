@@ -11,14 +11,14 @@ parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
 
 
-# def test_flipping():
-#     '''
-#     Testing the horizontal flipping function
-#     '''
-#     flipping("tests/images/sample.jpg", "tests/images/sample_flipping_h.png")
-#     output = plt.imread("tests/images/sample_flipping_h.png")
-#     test_output = plt.imread("tests/images/flipped_sample.png")
-#     assert np.array_equal(output, test_output), "The image was not flipped properly"
+def test_flipping():
+    '''
+    Testing the horizontal flipping function
+    '''
+    flipping("tests/images/sample.jpg", "tests/images/sample_flipping_h.png")
+    output = plt.imread("tests/images/sample_flipping_h.png")
+    test_output = plt.imread("tests/images/flipped_sample.png")
+    assert np.array_equal(output, test_output), "The image was not flipped properly"
 
 
 # Exception Handling
