@@ -2,7 +2,6 @@
 
 ![](https://github.com/wang-rui/imageprocessor/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/wang-rui/imageprocessor/branch/main/graph/badge.svg)](https://codecov.io/gh/wang-rui/imageprocessor) ![Release](https://github.com/wang-rui/imageprocessor/workflows/Release/badge.svg) [![Documentation Status](https://readthedocs.org/projects/imageprocessor/badge/?version=latest)](https://imageprocessor.readthedocs.io/en/latest/?badge=latest)
 
-This cookiecutter creates a boilerplate for a Python project.
 
 ## Overview
 
