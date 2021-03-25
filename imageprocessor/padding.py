@@ -29,10 +29,9 @@ def padding(image='', width=1, output_path=''):
         print(e)
         raise
 
-    extra_left, extra_right = 1, 1
-    extra_top, extra_bottom = 1, 1
+ 
     try:
-        image_pad = np.pad(image, ((extra_left, extra_right), (extra_top, extra_bottom), (0, 0)),
+        image_pad = np.pad(image, ((width, width), (width, width), (0, 0)),
             mode='constant', constant_values=0)
     except ValueError:
         print("The shape is not correct")
